@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+/* Header */
+header{
+    width: 100%;
+    border-top: none;
+}
+.main-header{
+    display: none;
+    padding: 40px 0;
+    width: 72%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.logo img{
+    width: 183px;
+    height: 41px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+}
+.main-header .nav-links ul{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.main-header .nav-links ul a{
+    padding: 12px 28px;
+    color: rgb(110, 109, 109);
+}
+.main-header .nav-links ul a:hover{
+    opacity: 0.7;
+}
+.nav-links ul a.subscribe-btn{
+    background-color: #6800cc;
+    color: white;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: top 1s linear;
+    transition: box-shadow 0.2s;
+}
+.nav-links ul a.subscribe-btn:hover{
+  background-color:#6800cc;
+  opacity: 1;
+  cursor: pointer;
+  top:-2px;
+  box-shadow: 1px 5px 10px gray;
+}
+.main-header .nav-links ul a.subscribe-btn {
+    color: white;
+}
+.mobile-subscrib-btn{
+    display: block;
+    padding: 15px 20px;
+    outline: none;
+    border:none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 180px;
+}
+
+/* Media Query for Larger Screen */
+
+@media (min-width: 900px){
+    header{
+        border-top: 10px solid #8500ff;
+    }
+    .main-header{
+      display: flex;
+    }  
+    .mobile-subscrib-btn{
+        display: none;
+    }
+}
+@media (min-width: 2550px){
+    .main-header{
+        width: 45%;
+}
+
+}
